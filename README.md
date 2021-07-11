@@ -14,6 +14,7 @@ message.reply("I am not mentioning you!", {
 });
 ```
 although still being supported.
+**Using both may result in unexpected behaviour.**
 
 ```diff
 @@ DISCLAIMER @@
