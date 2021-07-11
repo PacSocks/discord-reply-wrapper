@@ -12,11 +12,14 @@ class PatchedMessage extends Structures.get("Message") {
   }
   
   reply(...args) {
-    if(args[0]===false){
+    try{
+      var option = args[1].allowed_mentions.repliedUser;
+    } catch() {}
+    if(args[0]===false||option===false){
       args.shift();
       return lineReplyNoMention(...args);
     }else{
-      if(mention===false&&args[0]!==true)return lineReplyNoMention(...args);
+      if(mention===false&&(args[0]!==true||option!==true))return lineReplyNoMention(...args);
       return lineReply(...args);
     }
   }
