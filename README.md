@@ -17,8 +17,16 @@ although still being supported.
 
 ```diff
 @@ DISCLAIMER @@
-– Using the latter is NOT reccomended as the official Discord.JS library does not have built-in support for that.
-- Although support may change as discord.js@13.0.0 is not fully developed, there is NO guarantee that this feature will be in the library! 
+
+– Using the latter is NOT fully reccommended as the official Discord.JS library
+
+- does NOT have built-in support for that.
+
+- Although support may change as discord.js@13.0.0 is not fully developed, 
+
+- there is NO guarantee that this feature will be in the library! 
+
++ You can just use this library forever, maybe? Maybe not?
 ```
 
 
