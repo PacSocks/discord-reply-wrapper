@@ -1,4 +1,4 @@
-const {Structures} = require("discord.js);
+const {Structures} = require("discord.js");
 
 // loads discord-reply, this wraps that...
 require("discord-reply");
@@ -23,7 +23,6 @@ class PatchedMessage extends Structures.get("Message") {
       return lineReply(...args);
     }
   }
-
 }
 
 Structures.extend("Message", () => PatchedMessage);
